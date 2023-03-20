@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    gap: 40px;
+    background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);
+    
+}
+img {
+    height: 100vh;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1 {
+    margin-top: 40px;
+}
