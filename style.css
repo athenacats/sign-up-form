@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -20,8 +22,27 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    
 }
 
 .text1 {
-    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.personalInfo {
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    column-gap: 10px;
+    min-width: 670px;
+    row-gap: 10px;
+}
+
+@media screen and (max-width: 850px){
+    .personalInfo {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
 }
