@@ -48,9 +48,8 @@ img {
 .personalInfo {
     font-family: 'Oswald', sans-serif;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: auto auto auto auto;
     column-gap: 10px;
-    min-width: 670px;
     row-gap: 5px;
     background-color: #374e45;
     color: #cbf5e4;
@@ -62,9 +61,40 @@ img {
     font-weight: 600;
 }
 
+.choose {
+    font-family: 'Oswald', sans-serif;
+    background-color: #374e45;
+    color: #cbf5e4; 
+}
+
+.choose legend {
+    text-align: left;
+    font-weight: 600;
+}
+
+.choose label {
+    padding: 20px;
+}
+
+.choose .choices {
+    display: inline-flex;
+
+}
+
+button {
+    background-color: #374e45;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: #cbf5e4;
+    align-items: center;
+}
+
+
 @media screen and (max-width: 850px){
     .personalInfo {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
 
     }
     
