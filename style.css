@@ -19,6 +19,10 @@ body {
 
 .placer {
     flex: 1;
+    background-image: url(images/IMG_0053.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
    
     
 }
