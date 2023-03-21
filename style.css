@@ -28,32 +28,32 @@ body {
 
 .placer-inner {
     margin: auto;
+    display: flex;
     align-items: center;  
     justify-content: center;
+    gap: 10px;
     width: 100%;
-    background-color: rgba(11, 40, 28, 0.7);
-    
-    
+    background-color: rgba(203, 245, 228, 0.7);   
+}
+
+.placer-title {
+    font-family: 'Playfair Display', serif;
+    color: #374e45;
+
 }
 
 .container {
     display: flex;
     height: 100vh;
     gap: 20px;
-    background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);
-    
-    
+    background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);  
 }
 
 .placer-inner img {
-    padding: 20px;
-    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: 20vh;
-    border-radius: 90%;
-    opacity: 1;
-    justify-self: center;
-    
-    
+    border-radius: 90%;    
 }
 
 .info {
@@ -147,6 +147,10 @@ button {
     .text, .text1, .title {
         font-size: 1rem;
         font-weight: 600;   
+    }
+
+    .placer-title {
+        font-size: 1.5rem;
     }
 
     .personalInfo,.choose, button {
