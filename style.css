@@ -1,15 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+body {
+    background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
-    height: auto;
+    height: 100vh;
     gap: 40px;
-    background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);
+    
     
 }
+
 img {
     height: 100vh;
 
@@ -86,14 +96,31 @@ button {
     border-radius: 8px;
     color: #cbf5e4;
     align-items: center;
+    margin: 0 auto;
 }
 
 
 @media screen and (max-width: 1020px){
     .personalInfo {
         grid-template-columns: auto auto;
-
+        align-items: center;
+        justify-self: center;
+        margin: 0 auto;
     }
     
 }
+
+@media screen and (max-width: 830px){
+    .text, .text1, .title {
+        font-size: 1rem;
+        font-weight: 600;   
+    }
+
+    .personalInfo,.choose, button {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
+
+
 
