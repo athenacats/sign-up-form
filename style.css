@@ -29,7 +29,7 @@ body {
 .placer {
     /*ensure that it is smaller than the .info*/
     flex: 1;
-    background-image: url(images/IMG_0053.PNG);
+    background-image: url(images/compressed-image.jpg);
     background-repeat: no-repeat;
     /*cover, not contain, so that aspect ratio is not affected*/
     background-size: cover;
