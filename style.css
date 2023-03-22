@@ -130,6 +130,25 @@ button {
     align-items: center;
     margin: 0 auto;
     box-shadow: #cbf5e4;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cbf5e4;
+    color: #374e45;
+}
+
+.choose input {
+    cursor: pointer;
+}
+
+.choose input:hover {
+    cursor: pointer;
+}
+
+.personalInfo input:not(:placeholder-shown):not(:focus):invalid {
+    outline: none;
+    box-shadow: 1px 1px 1px 1px red;
 }
 
 
