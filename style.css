@@ -60,7 +60,7 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
     
@@ -140,6 +140,10 @@ button {
         justify-self: center;
         margin: 0 auto;
     }
+
+    .personalInfo input {
+        width: 40vw;
+    }
     
 }
 
@@ -157,7 +161,55 @@ button {
         font-size: 0.8rem;
         font-weight: 400;
     }
+
+    .personalInfo input {
+        width: 40vw;
+    }
 }
 
 @media screen and (max-width: 690px){
+    .placer-title {
+        font-size: 1rem;
+    }
+    .placer-inner img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 15vh;  
+    }
+
+    .placer-inner {
+        gap: 2px;
+    }
+
+    .text, .text1, .title {
+        font-size: 0.7rem;
+        font-weight: 600;  
+        width: 55vw; 
+    }
+
+    .container {
+        gap: 5px;
+    }
+
+    .info {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .personalInfo{
+        width: 55vw;
+        column-gap: 0px;
+    }
+
+    .choose {
+        padding-right: 5px;
+        margin: 0 auto; 
+        width: 55vw;
+    }
+
+    .personalInfo input {
+        width: 30vw;
+    }
+
+
 }
