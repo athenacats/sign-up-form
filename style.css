@@ -1,9 +1,11 @@
+
+/*overall reset of entire page*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ /*this removes the scrollbar*/
 html {
     margin: 0;
     padding: 0;
@@ -11,35 +13,9 @@ html {
     height: 100%;
 }
     
-
+/*only fits viewheight*/
 body {
-    
     min-height: 100vh;
-}
-
-.placer {
-    flex: 1;
-    background-image: url(images/IMG_0053.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;  
-    display: flex; 
-}
-
-.placer-inner {
-    margin: auto;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    background-color: rgba(203, 245, 228, 0.7);   
-}
-
-.placer-title {
-    font-family: 'Playfair Display', serif;
-    color: #374e45;
-
 }
 
 .container {
@@ -49,46 +25,65 @@ body {
     background-image:linear-gradient(to top left, #1e4d3a ,#cbf5e4);  
 }
 
+/*left side*/
+.placer {
+    /*ensure that it is smaller than the .info*/
+    flex: 1;
+    background-image: url(images/IMG_0053.PNG);
+    background-repeat: no-repeat;
+    /*cover, not contain, so that aspect ratio is not affected*/
+    background-size: cover;
+    background-position: center;  
+    display: flex; 
+}
+
+.placer-inner {
+    /*centers it*/
+    margin: auto;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    /*need to write colour in this way so opacity applies*/
+    background-color: rgba(203, 245, 228, 0.7);   
+}
+
+.placer-title {
+    font-family: 'Playfair Display', serif;
+    color: #374e45;
+
+}
+
 .placer-inner img {
-    padding-top: 20px;
+    padding-top: 20px; /*defines the width of the translucent div*/
     padding-bottom: 20px;
     height: 20vh;
     border-radius: 90%;    
 }
 
+/*right side*/
 .info {
+    /*refer to flex:1 in .placer*/
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
-    
 }
 
-.text1 {
+.text1, .title, .text {
     font-family: 'Playfair Display', serif;
     text-align: left;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.title {
-    font-family: 'Playfair Display', serif;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.text {
-    font-family: 'Playfair Display', serif;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 600;
-} 
 
 .personalInfo {
     font-family: 'Oswald', sans-serif;
+    /*4 columns when in full page*/
     display: grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 10px;
@@ -119,7 +114,6 @@ body {
 }
 
 
-
 button {
     background-color: #374e45;
     font-family: 'Oswald', sans-serif;
@@ -142,16 +136,13 @@ button:hover {
     cursor: pointer;
 }
 
-.choose input:hover {
-    cursor: pointer;
-}
-
+/*this line of code is to avoid the box from defaulting to red before input*/
 .personalInfo input:not(:placeholder-shown):not(:focus):invalid {
     outline: none;
     box-shadow: 1px 1px 1px 1px red;
 }
 
-
+/*the form size became too small at this width. change to two columns*/
 @media screen and (max-width: 1020px){
     .personalInfo {
         grid-template-columns: auto auto;
@@ -160,12 +151,14 @@ button:hover {
         margin: 0 auto;
     }
 
+    /*define the length of input box*/
     .personalInfo input {
         width: 40vw;
     }
     
 }
 
+/*text size became too big*/
 @media screen and (max-width: 830px){
     .text, .text1, .title {
         font-size: 1rem;
@@ -186,6 +179,7 @@ button:hover {
     }
 }
 
+/*for mobile phones*/
 @media screen and (max-width: 690px){
     .placer-title {
         font-size: 1rem;
@@ -229,6 +223,4 @@ button:hover {
     .personalInfo input {
         width: 30vw;
     }
-
-
 }
